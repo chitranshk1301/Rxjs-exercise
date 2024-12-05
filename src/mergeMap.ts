@@ -1,8 +1,8 @@
 import { interval } from "rxjs";
-import { switchMap } from "rxjs/operators";
+import { mergeMap } from "rxjs/operators";
 import axios from 'axios'
 
-const url = "https://random-data-api.com/api/v2/users";
+const url = "https://dummyjson.com/products";
 
 function getData() {
     return axios.get(url)
@@ -11,7 +11,7 @@ function getData() {
 }
 
 const observable = interval(1000).pipe(
-    switchMap(() => {
+    mergeMap(() => {
         console.log("Making HTTP request......");
         return getData();
     })

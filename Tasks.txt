@@ -1,0 +1,45 @@
+This exercise aims to set up a typescript environment and understand reactive programming. Reactive programming can enable us to write complex asynchronous logic in simple streams via pipe. There are hundreds of Rx Operators used for different purposes. We will look at some e fundamentals operators that come in use for general operations. 
+
+You are not supposed to learn these operators but understand them. 
+
+ 
+
+1. Create a function which returns a random object of interface Car {name: string, model: string, yearOfRelease:number, brand: string, color: string} 
+
+2. Create an Observable1 which emits a new car every Interval of 1s. (using the previous function) 
+
+3. Create an Observable2 which emits a car with color = ‘black’ and yearOfRelease < 2000 (Using the Observable1, Hint: use ‘filter’ operator) 
+
+4. Create an Observable3 which emits an object of interface Scrap {brand: string, yearOfRelease: number}, using the Observable2 (Hint use ‘map’ operator) 
+
+5. Create an Observable4 which makes an api call to a free service every second. Ex. https://random-data-api.com/documentation (Hint: Use ‘switchMap’ operator) 
+
+6. Create an Observable5 which makes an api call to a free service every 100 milliseconds until but waits until the previous request is completed. (Hint: Use ‘concatMap’ operator) 
+
+7. Create an Observable6 which makes an api call to a free service every 50 milliseconds without wait but completes when it receives 5 emits. (Hint: Use ‘mergeMap’ and ‘take’ operator) 
+
+https://rxjs.dev/guide/subject  
+
+https://rxj5s.dev/guide/subscription 
+
+Resources: 
+
+Fundamentals of Typescript (https://www.youtube.com/playlist?list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwKPUI)
+
+Advance Typescript (https://www.youtube.com/playlist?list=PLFL823koLiuvqsk4-t0DfQ9WVi8pOk2Vq)
+
+Understanding rxjs (https://www.youtube.com/playlist?list=PL55RiY5tL51pHpagYcrN9ubNLVXF8rGVi)
+
+Rxjs Crash course --> (https://www.youtube.com/watch?v=tGWBy6Vqq9w) 
+
+(Promises / Async-await) https://www.youtube.com/watch?v=PoRJizFvM7s 
+
+(Practice Material)   
+
+https://rxjs-dev.firebaseapp.com/guide/observable 
+
+https://rxjs-dev.firebaseapp.com/guide/observer 
+
+https://rxjs-dev.firebaseapp.com/guide/operators 
+
+https://rxjs-dev.firebaseapp.com/guide/subscription 
