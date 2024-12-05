@@ -1,5 +1,5 @@
 import { interval } from "rxjs";
-import { mergeMap } from "rxjs/operators";
+import { mergeMap, take } from "rxjs/operators";
 import axios from 'axios'
 
 const url = "https://dummyjson.com/products";
@@ -10,7 +10,7 @@ function getData() {
         .catch(error => console.log(error))
 }
 
-const observable = interval(1000).pipe(
+const observable = interval(1000).pipe(take(5)).pipe(
     mergeMap(() => {
         console.log("Making HTTP request......");
         return getData();

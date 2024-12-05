@@ -12,7 +12,7 @@ function getData() {
         .then(response => response.data)
         .catch(error => console.log(error));
 }
-const observable = (0, rxjs_1.interval)(1000).pipe((0, operators_1.mergeMap)(() => {
+const observable = (0, rxjs_1.interval)(1000).pipe((0, operators_1.take)(5)).pipe((0, operators_1.mergeMap)(() => {
     console.log("Making HTTP request......");
     return getData();
 }));
