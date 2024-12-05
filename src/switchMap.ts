@@ -21,4 +21,3 @@ const observable = interval(1000).pipe(
 )
 
 observable.subscribe((data) => (console.log("Recieved data: ", data)))
-

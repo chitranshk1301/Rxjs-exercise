@@ -5,7 +5,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "index": "node dist/index.js",
-    "operators": "node dist/switchMap.js"
+    "switch-map": "node dist/switchMap.js",
+    "concat-map": "node dist/concatMap.js",
+    "merge-map": "node dist/mergeMap.js"
   },
   "keywords": [],
   "author": "",
