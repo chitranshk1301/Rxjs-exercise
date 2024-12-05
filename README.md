@@ -1,3 +1,6 @@
+Install the dependencies
+npm install
+
 npm run index (For first 3 tasks)
 npm run switch-map (For switch map)
 npm run concat-map (For concat map)
